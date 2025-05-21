@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The My Shell Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #00897b;
+      --bg: #f8f9fa;
+      --text: #222;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: white;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .lang-switch {
+      font-size: 0.9rem;
+      cursor: pointer;
+      color: #555;
+    }
+
+    .lang-switch span {
+      margin: 0 0.3rem;
+    }
+
+    main {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text-content {
+      flex: 1 1 350px;
+      max-width: 600px;
+    }
+
+    .text-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .text-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00695c;
+    }
+
+    .carousel {
+      flex: 1 1 300px;
+      max-width: 400px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .carousel img {
+      width: 100%;
+      display: none;
+      border-radius: 10px;
+    }
+
+    .carousel img.active {
+      display: block;
+    }
+
+    footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The My Shell Project</h1>
+    <div class="lang-switch">
+      <span>DE</span> | <span>EN</span>
+    </div>
+  </header>
+
+  <main>
+  <div class="text-content">
+    <h2></h2>
+    <p></p>
+    <button class="btn"></button>
+  </div>
+
+    <div class="carousel" id="carousel">
+      <img src="https://source.unsplash.com/400x300/?germany,house,1" class="active" alt="Haus 1" />
+      <img src="https://source.unsplash.com/400x300/?german,village,2" alt="Haus 2" />
+      <img src="https://source.unsplash.com/400x300/?brick,house,germany" alt="Haus 3" />
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 The My Shell Project. Alle Rechte vorbehalten.
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
